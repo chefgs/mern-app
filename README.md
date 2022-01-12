@@ -53,6 +53,7 @@ It is been a while I'm trying to create a Web App using MERN stack. Finally I'm 
 ![connect_string](https://github.com/chefgs/repo_images/blob/master/mongo-connect-dbstring.png?auto=format%2Ccompress)
 
 - Step 6: Get the `connection string` for the database to use it in the `ATLAS_URI` config value in the file `server/config.env` later in this tutorial
+- Step 7: We are choosing `sample_airbnb` database collection to implement the bookings catalog application
 ```
 mongodb+srv://<admin_user>:<password>@democluster.aurnw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 ```
