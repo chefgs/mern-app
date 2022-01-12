@@ -1,4 +1,4 @@
-# MongoDB and Express.js REST API sample application
+# MongoDB ExpressJS ReactJS and NodeJS (MERN) based Product Catalog application 
 
 ## Introduction
 This is a MERN Web Application and MERN stands for MongoDB, Express, React, Node, which are making up the tech stack.
