@@ -1,4 +1,4 @@
-# "Property Booking Catalog" web app developed using MERN Stack 
+# "Property Bookings Catalog" web app developed using MERN Stack 
 
 ## Table of Contents
 - [Introduction](#introduction)
