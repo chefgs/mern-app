@@ -1,12 +1,12 @@
-# MongoDB ExpressJS ReactJS and NodeJS (MERN) based Product Catalog application 
+# Property Booking Catalog application developed using MERN Stack 
 
 ## Introduction
-This is a MERN Web Application and MERN stands for MongoDB, Express, React, Node, which are making up the tech stack.
+This is a MERN Web Application. MERN stands for MongoDB, Express, React, Node, which are making up the tech stack.
 
 MongoDB - Popular NoSQL document database
-Express(.js) - Node.js web framework
-React(.js) - a client-side JavaScript framework
-Node(.js) - the JavaScript web server
+ExpressJS - Node.js web framework
+ReactJS - a client-side JavaScript framework
+NodeJS - the JavaScript web server
 
 Express and Node make up the middle (application) tier. Express.js is a server-side web framework, and Node.js the popular and powerful JavaScript server platform. Regardless of which variant you choose, ME(RVA)N is the ideal approach to working with JavaScript and JSON, all the way through.
 
