@@ -1,4 +1,4 @@
-# Property Booking Catalog application developed using MERN Stack 
+# "Property Booking Catalog" web app developed using MERN Stack 
 
 ## Introduction
 This application is developed for the submission of *__Dev community X  MongoDB Hackathon__*. This is a MERN stack based Web Application. 
