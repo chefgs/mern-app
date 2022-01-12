@@ -17,7 +17,7 @@ The MERN architecture allows you to easily construct a 3-tier architecture (fron
 It is been a while I'm trying to create a Web App using MERN stack. Finally I'm able to create it. Thanks to the great [article by MongoDB team](https://www.mongodb.com/languages/express-mongodb-rest-api-tutorial). I took the inspiration from the MongoDB tutorial and created this application.
 
 ## Steps to create the application
-### Create MongoDB Cluster
+### Create MongoDB Cluster and Get Connection String
 - We choose MongoDB Atlas Managed Database Service provider by MongoDB
 - We need to signup for an account in MongoDB portal
 - After logging into account we need to create project and enable billing if needed. There is no billing required for Demo purposes.
@@ -34,7 +34,7 @@ It is been a while I'm trying to create a Web App using MERN stack. Finally I'm 
 ```
 mongodb+srv://<admin_user>:<password>@democluster.aurnw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 ```
-Note: Replace <password> with the password for the <admin_user> user. Replace myFirstDatabase with the name of the database that connections will use by default.
+Note: Replace `<password>` with the password for the `<admin_user>` user. Replace myFirstDatabase with the name of the database that connections will use by default.
 
 ## Setting up Application to connect with MongoDB
 - We have `server/config.env` file in our repository, replace the values `db_user`, `db_user_pwd` and `mongodb_cluster_url` with the respective values that is set
@@ -42,8 +42,9 @@ Then, set the Atlas URI connection parameter in `server/config.env` to our Conne
 ```
 ATLAS_URI=mongodb+srv://<db_user>:<db_user_pwd>@<mongodb_cluster_url>?retryWrites=true&w=majority
 ```
-
+- We need to run the Express server and React app parallely in two different terminals
 ## Start the Express server
+- Express server runs on `localhost:5000`
 ### Method 1
 - In this method we use `nodemon` - Nodemon is a utility that will monitor for any changes in your source and automatically restart your server.
 ```
@@ -61,12 +62,27 @@ npm install
 npm start
 ```
 
-## Start the React app:
+## Start the React app
+- React app runs on `localhost:3000`
 ```
 cd app/listings/
 npm install
 npm start
 ```
+## Testing Application and Accessing UI
+- Once `Server` and `React App` are up and running, it opens the portal in default browser on `http://localhost:3000` URL (else we can use this URL to access the portal) and we should see our “Property Bookings Catalog” application.
+
+> Application Accessible on Browser
+![mern app in browser](https://github.com/chefgs/repo_images/blob/master/mern_app.png)
+
+> Application `See Details` response
+![mern see details](https://github.com/chefgs/repo_images/blob/master/mern-app-seedetails.png)
+
+> Server response on console for various CRUD operations
+![server response](https://github.com/chefgs/repo_images/blob/master/mern-app-server-resp.png)
+
+## Next steps
+- TODO: Setup GitHub Action for build and test
 
 ## Reference
 - This repository contains the sample application for the [MongoDB and Express.js REST API tutorial](https://www.mongodb.com/languages/express-mongodb-rest-api-tutorial).
