@@ -1,0 +1,22 @@
+{
+  "name": "mern-app",
+  "version": "1.0.0",
+  "description": "Sample project for the article on MongoDB and Express.js web REST API tutorial",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chefgs/mern-app.git"
+  },
+  "keywords": [
+    "mongodb",
+    "node",
+    "express",
+    "atlas",
+    "react"
+  ],
+  "author": "Saravanan G",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/chefgs/mern-app/issues"
+  },
+  "homepage": "https://github.com/chefgs/mern-app.git#readme"
+}
