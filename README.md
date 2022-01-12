@@ -27,14 +27,20 @@ It is been a while I'm trying to create a Web App using MERN stack. Finally I'm 
 - After logging into account we need to create project and enable billing if needed. There is no billing required for Demo purposes.
 - Rest of steps assuming that, we have created project in MongoDB account
   - Step 1: Create MongoDB cluster using Atlas UI. Refer the documentation [here](https://docs.atlas.mongodb.com/getting-started/?_ga=2.209539858.187869111.1641820485-130312989.1641820485)
-> ![project](https://github.com/chefgs/repo_images/blob/master/mongo-create-project-cluster.png?auto=format%2Ccompress)
+
+![project](https://github.com/chefgs/repo_images/blob/master/mongo-create-project-cluster.png?auto=format%2Ccompress)
+
   - Step 2: After choosing the project to create the Cluster, click `create` button
   - Step 3: Choose the required Cloud Provider and dedicated or shared infrastructure to host the DB. This would take few minutes to create the Cluster. Move to next step after the Cluster creation is complete
-> ![create_cluster](https://github.com/chefgs/repo_images/blob/master/mongo-create-cluster.png?auto=format%2Ccompress)  
+
+![create_cluster](https://github.com/chefgs/repo_images/blob/master/mongo-create-cluster.png?auto=format%2Ccompress)  
+
   - Step 4: Select the database from Atlas UI and click on `connect` button available near the DB cluster
   - Step 5: Choose `Connect Your Application` and choose `NodeJS` from the option in next screen
-> ![connect_string](https://github.com/chefgs/repo_images/blob/master/mongo-connect-dbstring.png?auto=format%2Ccompress)
-  - Step 6: Get the `connection string` for the database to use it in the `ATLAS_URI` config value in the file `server/config.env` later in this tutorial
+
+![connect_string](https://github.com/chefgs/repo_images/blob/master/mongo-connect-dbstring.png?auto=format%2Ccompress)
+
+- Step 6: Get the `connection string` for the database to use it in the `ATLAS_URI` config value in the file `server/config.env` later in this tutorial
 ```
 mongodb+srv://<admin_user>:<password>@democluster.aurnw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 ```
