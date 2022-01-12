@@ -1,5 +1,7 @@
 # Property Booking Catalog application developed using MERN Stack 
 
+This application is developed for the submission of Dev community X  MongoDB hackthon.
+
 ## Introduction
 This is a MERN Web Application. MERN stands for MongoDB, Express, React, Node, which are making up the tech stack.
 
