@@ -1,7 +1,7 @@
 # Property Booking Catalog application developed using MERN Stack 
 
 ## Introduction
-This application is developed for the submission of *_Dev community X  MongoDB Hackathon_*. This is a MERN stack based Web Application. 
+This application is developed for the submission of *__Dev community X  MongoDB Hackathon__*. This is a MERN stack based Web Application. 
 
 MERN stands for MongoDB, Express, React, Node, which are making up the tech stack.
 
@@ -77,12 +77,15 @@ npm start
 - Once `Server` and `React App` are up and running, it opens the portal in default browser on `http://localhost:3000` URL (else we can use this URL to access the portal) and we should see our “Property Bookings Catalog” application.
 
 > Application Accessible on Browser
+> 
 ![mern app in browser](https://github.com/chefgs/repo_images/blob/master/mern_app.png?auto=format%2Ccompress)
 
 > Application `See Details` response
+> 
 ![mern see details](https://github.com/chefgs/repo_images/blob/master/mern-app-seedetails.png?auto=format%2Ccompress)
 
 > Server response on console for various CRUD operations
+> 
 ![server response](https://github.com/chefgs/repo_images/blob/master/mern-app-server-resp.png?auto=format%2Ccompress)
 
 ## Next steps
