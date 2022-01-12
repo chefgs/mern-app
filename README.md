@@ -13,9 +13,8 @@ NodeJS - the JavaScript web server
 Express and Node make up the middle (application) tier. Express.js is a server-side web framework, and Node.js the popular and powerful JavaScript server platform. Regardless of which variant you choose, ME(RVA)N is the ideal approach to working with JavaScript and JSON, all the way through.
 
 ## MERN Architecture
-As per the [documentation](https://www.mongodb.com/mern-stack)
->
-The MERN architecture allows you to easily construct a 3-tier architecture (frontend, backend, database) entirely using JavaScript and JSON.
+> As per the [documentation](https://www.mongodb.com/mern-stack)
+The MERN architecture allows us to easily construct a 3-tier architecture (frontend, backend, database) entirely using JavaScript and JSON.
 ![MERN Arch](https://webimages.mongodb.com/_com_assets/cms/mern-stack-b9q1kbudz0.png?auto=format%2Ccompress)
 
 It is been a while I'm trying to create a Web App using MERN stack. Finally I'm able to create it. Thanks to the great [article by MongoDB team](https://www.mongodb.com/languages/express-mongodb-rest-api-tutorial). I took the inspiration from the MongoDB tutorial and created this application.
