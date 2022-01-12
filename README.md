@@ -73,13 +73,13 @@ npm start
 - Once `Server` and `React App` are up and running, it opens the portal in default browser on `http://localhost:3000` URL (else we can use this URL to access the portal) and we should see our “Property Bookings Catalog” application.
 
 > Application Accessible on Browser
-![mern app in browser](https://github.com/chefgs/repo_images/blob/master/mern_app.png)
+![mern app in browser](https://github.com/chefgs/repo_images/blob/master/mern_app.png?auto=format%2Ccompress)
 
 > Application `See Details` response
-![mern see details](https://github.com/chefgs/repo_images/blob/master/mern-app-seedetails.png)
+![mern see details](https://github.com/chefgs/repo_images/blob/master/mern-app-seedetails.png?auto=format%2Ccompress)
 
 > Server response on console for various CRUD operations
-![server response](https://github.com/chefgs/repo_images/blob/master/mern-app-server-resp.png)
+![server response](https://github.com/chefgs/repo_images/blob/master/mern-app-server-resp.png?auto=format%2Ccompress)
 
 ## Next steps
 - TODO: Setup GitHub Action for build and test
