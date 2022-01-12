@@ -1,5 +1,18 @@
 # "Property Booking Catalog" web app developed using MERN Stack 
 
+## Table of Contents
+- [Introduction](#introduction)
+- [MERN Architecture](#mern-architecture)
+- [Steps to create the application](#steps-to-create-the-application)
+  - [Create MongoDB Cluster and Get DB Connection String](#create-mongodb-cluster-and-get-db-connection-string)
+  - [Setting up Application to connect with MongoDB](#setting-up-application-to-connect-with-mongodb)
+  - [Start the Express server](#start-the-express-server)
+    - [Method 1](#method-1)
+    - [Method 2](#method-2)
+  - [Start the React app](#start-the-react-app)
+- [Testing Application and Accessing UI](#testing-application-and-accessing-ui)
+- [Reference](#reference)
+
 ## Introduction
 This application is developed for the submission of *__Dev community X  MongoDB Hackathon__*. This is a MERN stack based Web Application. 
 
@@ -14,13 +27,13 @@ Express and Node make up the middle (application) tier. Express.js is a server-s
 
 ## MERN Architecture
 > As per the [documentation](https://www.mongodb.com/mern-stack)
-The MERN architecture allows us to easily construct a 3-tier architecture (frontend, backend, database) entirely using JavaScript and JSON.
+The MERN architecture allows us to easily construct a `3-tier` architecture (frontend, backend, database) entirely using JavaScript and JSON.
 ![MERN Arch](https://webimages.mongodb.com/_com_assets/cms/mern-stack-b9q1kbudz0.png?auto=format%2Ccompress)
 
 It is been a while I'm trying to create a Web App using MERN stack. Finally I'm able to create it. Thanks to the great [article by MongoDB team](https://www.mongodb.com/languages/express-mongodb-rest-api-tutorial). I took the inspiration from the MongoDB tutorial and created this application.
 
 ## Steps to create the application
-### Create MongoDB Cluster and Get Connection String
+### Create MongoDB Cluster and Get DB Connection String
 - We choose MongoDB Atlas Managed Database Service provider by MongoDB
 - We need to signup for an account in MongoDB portal
 - After logging into account we need to create project and enable billing if needed. There is no billing required for Demo purposes.
@@ -45,7 +58,7 @@ mongodb+srv://<admin_user>:<password>@democluster.aurnw.mongodb.net/myFirstDatab
 ```
 Note: Replace `<password>` with the password for the `<admin_user>` user. Replace myFirstDatabase with the name of the database that connections will use by default.
 
-## Setting up Application to connect with MongoDB
+### Setting up Application to connect with MongoDB
 - We have `server/config.env` file in our repository, replace the values `db_user`, `db_user_pwd` and `mongodb_cluster_url` with the respective values that is set
 Then, set the Atlas URI connection parameter in `server/config.env` to our Connection String:
 ```
@@ -93,8 +106,6 @@ npm start
 > 
 ![server response](https://github.com/chefgs/repo_images/blob/master/mern-app-server-resp.png?auto=format%2Ccompress)
 
-## Next steps
-- TODO: Setup GitHub Action for build and test
 
 ## Reference
 - This repository contains the sample application for the [MongoDB and Express.js REST API tutorial](https://www.mongodb.com/languages/express-mongodb-rest-api-tutorial).
