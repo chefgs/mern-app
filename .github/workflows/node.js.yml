@@ -35,3 +35,36 @@ jobs:
         npm run build --if-present
       working-directory: app/listings
 #    - run: npm test
+
+    - name: Build & push Server App Image
+      id: Build-and-Push-Server-App-Image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: gsdockit/mernapp-server
+        tags: latest
+        registry: docker.io
+        dockerfile: Dockerfile
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        directory: server
+    - name: Build & push Frontend App Image
+      id: Build-and-Push-Frontend-App-Image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: gsdockit/mernapp-ui
+        tags: latest
+        registry: docker.io
+        dockerfile: Dockerfile
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        directory: server  
+    - name: Posting Action Workflow updates to Slack
+      uses: act10ns/slack@v1
+      with: 
+        status: ${{ job.status }}
+        steps: ${{ toJson(steps) }}
+        channel: '#github-updates'
+      if: always()
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      
