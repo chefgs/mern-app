@@ -1,0 +1,33 @@
+# Build Image
+docker build . -t <docker_hub_userid>/mernapp-ui:latest
+
+# Test run image
+docker run -p 3000:3000 -d <docker_hub_userid>/mernapp-ui:latest
+
+# Login to docker hub
+docker login
+
+# Pick container ID
+docker container ls
+or
+docker ps
+
+# Push image
+docker push <docker_hub_userid>/mernapp-ui
+
+############################################################
+# Steps to run the mern app
+# Create docker image build for Server
+docker build . -t gsdockit/mernapp-server:latest
+
+# Start server by providing env variable
+docker run -p 5000:5000 -e "ATLAS_URI=mongodb+srv://admin:mongodbadmin@democluster.aurnw.mongodb.net?retryWrites=true&w=majority" -d gsdockit/mernapp-server:latest
+
+
+# Create docker image build for UI
+docker build . -t <docker_hub_userid>/mernapp-ui:latest
+
+# Test run image
+docker run -p 3000:3000 -d <docker_hub_userid>/mernapp-ui:latest
+
+# Access the app using http://localhost:3000
