@@ -1,5 +1,7 @@
 # "Property Bookings Catalog" web app developed using MERN Stack 
 
+[![NodeJS CI Job](https://github.com/chefgs/mern-app/actions/workflows/node.js.yml/badge.svg)](https://github.com/chefgs/mern-app/actions/workflows/node.js.yml)
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [MERN Architecture](#mern-architecture)
