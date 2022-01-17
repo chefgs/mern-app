@@ -9,7 +9,7 @@
     "axios": "^0.21.1",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^2.0.0",
     "react-tinder-card": "^1.4.0",
     "styled-components": "^5.3.0",
     "uuid": "^8.3.2",
@@ -21,7 +21,7 @@
     "prettier": "^2.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -36,14 +36,13 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "> 1%"
     ],
     "development": [
       "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 firefox version"
     ]
   },
   "husky": {
