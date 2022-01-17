@@ -1,3 +1,5 @@
 Error 1: browserlist error: upgrade to 2.0
 Error 2: error:0308010C:digital envelope routines::unsupported
 Update "start": "react-scripts --openssl-legacy-provider start"
+or
+Downgrade to node version 16.0
