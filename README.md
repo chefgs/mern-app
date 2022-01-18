@@ -111,7 +111,7 @@ npm start
 ![server response](https://github.com/chefgs/repo_images/blob/master/mern-app-server-resp.png?auto=format%2Ccompress)
 
 ## GitHub Action Workflow Details
-- This repo has GitHub action workflow to perform Continuous integration process explained below,
+- This repo has GitHub action [CI workflow](https://github.com/chefgs/mern-app/blob/master/.github/workflows/node.js.yml) to perform Continuous integration process explained below,
   - Checks out the code into workspace root
   - Build the server and frontend app
   - Creates docker image build for server and frontend app
