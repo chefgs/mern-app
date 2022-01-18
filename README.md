@@ -1,6 +1,6 @@
 # "Property Bookings Catalog" web app developed using MERN Stack 
 
-[![NodeJS CI Job](https://github.com/chefgs/mern-app/actions/workflows/node.js.yml/badge.svg)](https://github.com/chefgs/mern-app/actions/workflows/node.js.yml)
+[![NodeJS CI Job](https://github.com/chefgs/mern-app/actions/workflows/node.js.yml/badge.svg)](https://github.com/chefgs/mern-app/actions/workflows/node.js.yml)  [![CodeQL](https://github.com/chefgs/mern-app/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/chefgs/mern-app/actions/workflows/codeql-analysis.yml)
 
 ## Table of Contents
 - [Introduction](#introduction)
